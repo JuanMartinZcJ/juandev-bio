@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JuanDev.Bio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #050505;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+nav a {
+    color: #00f7ff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, #0f2027, #000);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #00f7ff;
+    text-shadow: 0 0 20px #00f7ff;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #00f7ff;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: #111;
+    border-radius: 15px;
+    width: 300px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #00f7ff44;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00f7ff;
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #00f7ff;
+}
+
+.card p {
+    padding: 0 15px;
+}
+
+/* PROFILE */
+.profile-card {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 15px #00f7ff44;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: black;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#games">Juegos</a>
+    <a href="#perfil">Perfil</a>
+</nav>
+
+<section class="hero">
+    <h1>JuanDev.Bio</h1>
+    <p>Creador de juegos en Roblox</p>
+    <a href="#games" class="btn">Ver mis juegos</a>
+</section>
+
+<section id="games" class="section">
+    <h2>🎮 Mis Juegos</h2>
+    <div class="games">
+
+        <div class="card">
+            <img src="https://thumbnails.roblox.com/v1/games/icons?universeIds=97454763152740&size=512x512&format=Png&isCircular=false">
+            <h3>Escapa del Zombie</h3>
+            <p>Escapa de hordas de zombies con lucky blocks llenos de sorpresas.</p>
+            <a href="https://www.roblox.com/es/games/97454763152740/Escapa-Del-Zombie-Por-Lucky-Blocks" target="_blank" class="btn">Jugar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://thumbnails.roblox.com/v1/games/icons?universeIds=74584963648657&size=512x512&format=Png&isCircular=false">
+            <h3>Block Eat Simulator</h3>
+            <p>Come bloques y crece hasta dominar el servidor.</p>
+            <a href="https://www.roblox.com/es/games/74584963648657/Block-Eat-Simulator" target="_blank" class="btn">Jugar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://thumbnails.roblox.com/v1/games/icons?universeIds=136305972572459&size=512x512&format=Png&isCircular=false">
+            <h3>Power Training Simulator</h3>
+            <p>Entrena tu poder y conviértete en el más fuerte.</p>
+            <a href="https://www.roblox.com/es/games/136305972572459/Power-Training-Simulator" target="_blank" class="btn">Jugar</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="perfil" class="section">
+    <h2>🔥 Sígueme en Roblox</h2>
+    <div class="profile-card">
+        <img src="https://thumbnails.roblox.com/v1/users/avatar-headshot?userIds=4347286715&size=150x150&format=Png">
+        <p>@JuanDev</p>
+        <a href="https://www.roblox.com/es/users/4347286715/profile" target="_blank" class="btn">Ver perfil</a>
+    </div>
+</section>
+
+<footer>
+    © JuanDev
+</footer>
+
+</body>
+</html>
